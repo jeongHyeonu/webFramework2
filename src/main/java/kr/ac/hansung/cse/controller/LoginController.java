@@ -14,11 +14,12 @@ public class LoginController {
                             Model model) {
 
         if(error != null) {
-            model.addAttribute("errorMsg","Invalid username or password");
+            System.out.println(error);
+            model.addAttribute("errorMsg","이름 또는 비밀번호를 찾을 수 없습니다.");
         }
 
         if(logout != null) {
-            model.addAttribute("logoutMsg", "You have been logged out successfully ");
+            model.addAttribute("logoutMsg", "로그아웃이 완료되었습니다.");
         }
 
         return "login";

@@ -10,10 +10,11 @@
 <head>
     <title>Title</title>
 </head>
+<%@ include file="header.jsp" %>
 <body>
-
-${offer.name} 가 새로운 제안을 하였습니다. 감사합니다.
-<a href="${pageContext.request.contextPath}/offers"> Click here to view current offers  </a>
-
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        수강신청이 완료 되었습니다.
+        <a href="${pageContext.request.contextPath}/courseEnrollList"> 확인하러 가기  </a>
+    </div>
 </body>
 </html>

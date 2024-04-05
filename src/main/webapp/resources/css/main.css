@@ -11,6 +11,7 @@
 .label {
     text-align: right;
     vertical-align:top;
+    width:150px;
 }
 
 .control {

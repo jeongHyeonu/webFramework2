@@ -1,15 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: nykim
-  Date: 2024-03-07
-  Time: 오후 4:45
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>학점 조회</title>
 </head>
 <%@include file="header.jsp"%>
 <body>
@@ -43,7 +36,7 @@
 
         <c:if test="${not empty course_detail}">
             <br/>
-            <div style="color: #ff0000;"> <h3> username님의 ${course_detail[0].year}년 ${course_detail[0].semester}학기 세부 정보</h3></div>
+            <div style="color: #ff0000;"> <h3>${pageContext.request.userPrincipal.name}님의 ${course_detail[0].year}년 ${course_detail[0].semester}학기 세부 정보</h3></div>
             <table class="table table-light table-hover" style="margin : auto; width : 80%;">
                 <tbody>
                 <tr>

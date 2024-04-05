@@ -1,16 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: hw020
-  Date: 2024-04-03
-  Time: 오후 1:48
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 
 <html>
 <head>
-    <title>Title</title>
+    <title>수강 신청 입력 폼</title>
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath}/resources/css/main.css" >
 
@@ -65,7 +58,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="새 제안"/> </td>
+                <td><input type="submit" value="수강 신청"/> </td>
             </tr>
         </table>
     </sf:form>

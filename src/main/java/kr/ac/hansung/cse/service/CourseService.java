@@ -14,10 +14,6 @@ public class CourseService {
     @Autowired
     private CourseDao courseDao;
 
-    public List<Course> getAllCourses() {
-        return courseDao.getCourses();
-    }
-
     public List<Course> getAllCoursesByGroup() {
         return courseDao.getCoursesByGroup();
     }

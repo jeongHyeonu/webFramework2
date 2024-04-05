@@ -37,7 +37,7 @@ public class Course {
     @NotEmpty(message="담당교수 이름을 입력해 주세요.")
     private String prof;
 
-    @NotNull(message="과목명을 입력해 주세요.")
+    @NotNull(message="학점을 입력해 주세요.")
     @Digits(integer = 1, fraction = 0)
     private Integer degree;
 }
